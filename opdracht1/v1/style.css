@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'myFont';
+    src: url('fonts/Aaargh.ttf') format("truetype");
+}
+
+
+body {
+    background-color: lightgrey;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'myFont', serif;
+}
+
+nav {
+    background-color: #FAFBFA;
+    display: block;
+    border-radius: 0.5em;
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+    padding: 1em;
+    font-family: 'myFont', serif;
+}
+
+li {
+    display: inline;
+    padding: 0.5em;
+    border-radius: .5em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: white;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  color: white;
+  text-align: center;
+}
+
+.alles{
+    background: linear-gradient(to top left, #ccff99 0%, #ffccff 100%);
+}
+
+.grijs{
+    background-color: gainsboro;
+}
+
+.roze{
+    background-color: lightpink;
+}
+
+.geel{
+    background-color: yellow;
+}
+
+.blauw{
+    background-color: deepskyblue;
+}
+
+.wit{
+    background-color: white;
+}
+
