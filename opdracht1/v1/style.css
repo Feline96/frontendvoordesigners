@@ -1,10 +1,23 @@
+@font-face {
+    font-family: 'myFont';
+    src: url('fonts/Aaargh.ttf') format("truetype");
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    background: #363636;
+    background-color: #E1E7E1;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'myFont', serif;
+    color: white;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .filter-gallerij {
@@ -13,29 +26,30 @@ body {
 
 .filter-gallerij .filter {
     list-style: none;
-    padding: 10px 15px;
-    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .filter-gallerij .filter li {
     display: inline-block;
+    padding: 0.5em;
+    align-items: center;
 }
 
 .filter-gallerij .filter li button {
     cursor: pointer;
-    background: transparent;
-    border-width: 1px;
-    border-color: #fff;
+    background-color: white;
     border-radius: 15px;
-    padding: 4px 15px;
-    color: #fff;
-    font-size: 13px;
+    padding: 0.4em 1em;
+    color: black;
+    font-size: 1em;
+    font-family: 'myFont', serif;
     outline: none;
 }
 
 .filter-gallerij .filter li.active button {
-    background-color: #fff;
-    color: #000;
+    background-color: black;
+    color: white;
 }
 
 .filter-gallerij .gallerij {
@@ -53,6 +67,7 @@ body {
     padding: 5px;
     list-style: none;
     transition: all 0.7s ease;
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -162,6 +177,14 @@ body {
     opacity: 1;
     transition: all 0.7s ease;
 }
+/* footer */
+
+footer {
+    text-align:center;
+    font-family: 'myFont', serif;
+    margin-bottom: 1em;
+}
+  
 
 
 /* BRON: https://codepen.io/saheeranas/pen/zepyyG */
