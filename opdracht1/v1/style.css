@@ -1,90 +1,167 @@
-@font-face {
-    font-family: 'myFont';
-    src: url('fonts/Aaargh.ttf') format("truetype");
+* {
+    box-sizing: border-box;
 }
-
 
 body {
-    background-color: lightgrey;
-    margin-left: 10em;
-    margin-right: 10em;
+    margin: 0;
+    background: #363636;
 }
 
-h1 {
+.filter-gallerij {
+    width: 100%;
+}
+
+.filter-gallerij .filter {
+    list-style: none;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+.filter-gallerij .filter li {
+    display: inline-block;
+}
+
+.filter-gallerij .filter li button {
+    cursor: pointer;
+    background: transparent;
+    border-width: 1px;
+    border-color: #fff;
+    border-radius: 15px;
+    padding: 4px 15px;
+    color: #fff;
+    font-size: 13px;
+    outline: none;
+}
+
+.filter-gallerij .filter li.active button {
+    background-color: #fff;
+    color: #000;
+}
+
+.filter-gallerij .gallerij {
+    width: 100%;
+    padding: 10px;
+    float: left;
+    transition: all 0.7s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0;
+}
+
+.filter-gallerij .gallerij li {
+    width: 20%;
+    float: left;
+    padding: 5px;
+    list-style: none;
+    transition: all 0.7s ease;
+}
+
+@media screen and (max-width: 1024px) {
+    .filter-gallerij .gallerij li {
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .filter-gallerij .gallerij li {
+        width: 50%;
+    }
+}
+
+.filter-gallerij .gallerij li a {
+    display: block;
+    width: 100%;
+}
+
+.filter-gallerij .gallerij li a img {
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+    .filter-gallerij .gallerij li a img {
+        height: 100px;
+    }
+}
+
+.filter-gallerij .gallerij li.shown {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.filter-gallerij .gallerij li.hidden {
+    transform: scale(0.3);
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    padding: 0;
+}
+
+.filter-gallerij .gallerij .gallerij-single {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: #fff;
     text-align: center;
-    font-family: 'myFont', serif;
+    transform: translateY(100%);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    background: #363636;
+    z-index: 1;
+    padding: 10px;
 }
 
-nav {
-    background-color: #FAFBFA;
-    display: block;
-    border-radius: 0.5em;
+.filter-gallerij .gallerij .gallerij-single .gallerij-single-inner {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
 }
 
-ul {
-    display: block;
-    list-style-type: none;
-    padding: 1em;
-    font-family: 'myFont', serif;
+.filter-gallerij .gallerij .gallerij-single .gallerij-single-inner #btnClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    z-index: 1;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 0;
+    color: #fff;
 }
 
-li {
-    display: inline;
-    padding: 0.5em;
-    border-radius: .5em;
-    padding-left: 2em;
-    padding-right: 2em;
-
+.filter-gallerij .gallerij .gallerij-single .gallerij-single-inner img {
+    max-width: 100%;
+    height: 330px;
+    object-fit: cover;
 }
 
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
+@media screen and (max-width: 480px) {
+    .filter-gallerij .gallerij .gallerij-single .gallerij-single-inner img {
+        height: 195px;
+    }
 }
 
-.flex-item {
-  background: white;
-  padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
-  
-  line-height: 150px;
-  color: white;
-  text-align: center;
+.filter-gallerij .gallerij .gallerij-single .gallerij-single-inner h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-.alles{
-    background: linear-gradient(to top left, #ccff99 0%, #ffccff 100%);
+.filter-gallerij .gallerij .gallerij-single .gallerij-single-inner p {
+    font-size: 16px;
+    font-family: Arial;
+    line-height: 1.4;
+    margin-bottom: 10px;
 }
 
-.grijs{
-    background-color: gainsboro;
+.filter-gallerij .gallerij.shown .gallerij-single {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.7s ease;
 }
 
-.roze{
-    background-color: lightpink;
-}
 
-.geel{
-    background-color: yellow;
-}
-
-.blauw{
-    background-color: deepskyblue;
-}
-
-.wit{
-    background-color: white;
-}
-
+/* BRON: https://codepen.io/saheeranas/pen/zepyyG */

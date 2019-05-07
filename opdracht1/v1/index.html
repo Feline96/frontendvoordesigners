@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -9,77 +9,269 @@
 </head>
 
 <body>
-    <h1>Find the perfect picture</h1>
-    <nav>
-        <ul>
-            <a>
-                <li class="alles">alles</li>
-            </a>
-            <a>
-                <li class="grijs">Grijs</li>
-            </a>
-            <a>
-                <li class="roze">Roze</li>
-            </a>
-            <a>
-                <li class="geel">Geel</li>
-            </a>
-            <a>
-                <li class="blauw">Blauw</li>
-            </a>
-            <a>
-                <li class="wit">Wit</li>
-            </a>
+
+    <div class="filter-gallerij">
+        <ul class="filter">
+            <li class="active"><button data-filter="alles">Alles</button></li>
+            <li><button data-filter="wit">Wit</button></li>
+            <li><button data-filter="grijs">Grijs</button></li>
+            <li><button data-filter="roze">Roze</button></li>
+            <li><button data-filter="geel">Geel</button></li>
+            <li><button data-filter="blauw">Blauw</button></li>
+            <li><button data-filter="groen">Groen</button></li>
         </ul>
-    </nav>
+        <ul class="gallerij">
+            <li data-filter="blauw">
+                <a href="#" data-title="foto1" data-desc="test">
+                    <img src="img/blauw1.jpeg" alt="foto1">
+                </a>
+            </li>
+            <li data-filter="geel">
+                <a href="#" data-title="paraplu">
+                    <img src="img/geel-1.jpeg" alt="paraplu">
+                </a>
+            </li>
+            <li data-filter="grijs">
+                <a href="#" data-title="hout">
+                    <img src="img/grijs-1.jpeg" alt="hout">
+                </a>
+            </li>
+            <li data-filter="groen">
+                <a href="#" data-title="groene auto">
+                    <img src="img/groen1.jpeg" alt="groene auto">
+                </a>
+            </li>
+            <li data-filter="roze">
+                <a href="#" data-title="parfum">
+                    <img src="img/roze-1.jpeg" alt="parfum">
+                </a>
+            </li>
+            <li data-filter="wit">
+                <a href="#" data-title="bureau">
+                    <img src="img/wit1.jpeg" alt="bureau">
+                </a>
+            </li>
+            <li data-filter="blauw">
+                <a href="#" data-title="door">
+                    <img src="img/blauw2.jpeg" alt="door">
+                </a>
+            </li>
+            <li data-filter="geel">
+                <a href="#" data-title="gele auto">
+                    <img src="img/geel-2.jpeg" alt="gele auto">
+                </a>
+            </li>
+            <li data-filter="grijs">
+                <a href="#" data-title="road">
+                    <img src="img/grijs-2.jpeg" alt="road">
+                </a>
+            </li>
+            <li data-filter="groen">
+                <a href="#" data-title="groene deur">
+                    <img src="img/groen2.jpeg" alt="groene deur">
+                </a>
+            </li>
+            <li data-filter="roze">
+                <a href="#" data-title="desk">
+                    <img src="img/roze-2.jpeg" alt="desk">
+                </a>
+            </li>
+            <li data-filter="wit">
+                <a href="#" data-title="zee">
+                    <img src="img/wit2.jpeg" alt="zee">
+                </a>
+            </li>
+            <li data-filter="blauw">
+                <a href="#" data-title="water">
+                    <img src="img/blauw3.jpeg" alt="water">
+                </a>
+            </li>
+            <li data-filter="geel">
+                <a href="#" data-title="wall">
+                    <img src="img/geel-3.jpeg" alt="wall">
+                </a>
+            </li>
+            <li data-filter="grijs">
+                <a href="#" data-title="stone">
+                    <img src="img/grijs-3.jpeg" alt="stone">
+                </a>
+            </li>
+           <li data-filter="groen">
+                <a href="#" data-title="blad">
+                    <img src="img/groen3.jpeg" alt="blad">
+                </a>
+            </li>
+            <li data-filter="roze">
+                <a href="#" data-title="text">
+                    <img src="img/roze-3.jpeg" alt="text">
+                </a>
+            </li>
+            <li data-filter="wit">
+                <a href="#" data-title="roos">
+                    <img src="img/wit3.jpeg" alt="roos">
+                </a>
+            </li>
+            <li data-filter="blauw">
+                <a href="#" data-title="air">
+                    <img src="img/blauw4.jpeg" alt="air">
+                </a>
+            </li>
+            <li data-filter="geel">
+                <a href="#" data-title="bal">
+                    <img src="img/geel-4.jpeg" alt="bal">
+                </a>
+            </li>
+            <li data-filter="groen">
+                <a href="#" data-title="groen blad">
+                    <img src="img/groen4.jpeg" alt="groen blad">
+                </a>
+            </li>
+            <li data-filter="roze">
+                <a href="#" data-title="hand">
+                    <img src="img/roze-4.jpeg" alt="hand">
+                </a>
+            </li>
+            <li data-filter="wit">
+                <a href="#" data-title="toetsenbord">
+                    <img src="img/wit4.jpeg" alt="toetsenbord">
+                </a>
+            </li>
+            <li data-filter="blauw">
+                <a href="#" data-title="lucht">
+                    <img src="img/blauw5.jpeg" alt="lucht">
+                </a>
+            </li>
+            <li data-filter="geel">
+                <a href="#" data-title="fiets">
+                    <img src="img/geel-5.jpeg" alt="fiets">
+                </a>
+            </li>
+            <li data-filter="grijs">
+                <a href="#" data-title="laptop">
+                    <img src="img/grijs-5.jpeg" alt="laptop">
+                </a>
+            </li>
+            <li data-filter="groen">
+                <a href="#" data-title="bos">
+                    <img src="img/groen5.jpeg" alt="bos">
+                </a>
+            </li>
+            <li data-filter="roze">
+                <a href="#" data-title="street">
+                    <img src="img/roze-5.jpeg" alt="street">
+                </a>
+            </li>
+            <li data-filter="wit">
+                <a href="#" data-title="sfeer">
+                    <img src="img/wit5.jpeg" alt="sfeer">
+                </a>
+            </li>
+            <li data-filter="blauw">
+                <a href="#" data-title="lego">
+                    <img src="img/blauw6.jpeg" alt="lego">
+                </a>
+            </li>
+            <li data-filter="geel">
+                <a href="#" data-title="citroen">
+                    <img src="img/geel-6.jpeg" alt="citroen">
+                </a>
+            </li>
+            <li data-filter="grijs">
+                <a href="#" data-title="bike">
+                    <img src="img/grijs-6.jpeg" alt="bike">
+                </a>
+            </li>
+            <li data-filter="groen">
+                <a href="#" data-title="blad2">
+                    <img src="img/groen6.jpeg" alt="blad2">
+                </a>
+            </li>
+            <li data-filter="roze">
+                <a href="#" data-title="lepel">
+                    <img src="img/roze-6.jpeg" alt="lepel">
+                </a>
+            </li>
+            <li data-filter="wit">
+                <a href="#" data-title="kopje">
+                    <img src="img/wit6.jpeg" alt="kopje">
+                </a>
+            </li>
+            <li data-filter="blauw">
+                <a href="#" data-title="citroen2">
+                    <img src="img/blauw7.jpeg" alt="citroen2">
+                </a>
+            </li>
+            <li data-filter="geel">
+                <a href="#" data-title="straat">
+                    <img src="img/geel-7.jpeg" alt="straat">
+                </a>
+            </li>
+            <li data-filter="grijs">
+                <a href="#" data-title="houtskool">
+                    <img src="img/grijs-7.jpeg" alt="houtskool">
+                </a>
+            </li>
+            <li data-filter="groen">
+                <a href="#" data-title="boom blad">
+                    <img src="img/groen7.jpeg" alt="boom blad">
+                </a>
+            </li>
+            <li data-filter="roze">
+                <a href="#" data-title="plane">
+                    <img src="img/roze-7.jpeg" alt="plane">
+                </a>
+            </li>
+            <li data-filter="wit">
+                <a href="#" data-title="vierkantjes">
+                    <img src="img/wit7.jpeg" alt="vierkantjes">
+                </a>
+            </li>
+            <li data-filter="blauw">
+                <a href="#" data-title="plant">
+                    <img src="img/blauw8.jpeg" alt="plant">
+                </a>
+            </li>
+            <li data-filter="geel">
+                <a href="#" data-title="stof">
+                    <img src="img/geel-8.jpeg" alt="stof">
+                </a>
+            </li>
+            <li data-filter="grijs">
+                <a href="#" data-title="logo">
+                    <img src="img/grijs-8.jpeg" alt="logo">
+                </a>
+            </li>
+            <li data-filter="roze">
+                <a href="#" data-title="gebouw">
+                    <img src="img/roze-8.jpeg" alt="gebouw">
+                </a>
+            </li>
+            <li data-filter="wit">
+                <a href="#" data-title="landschap">
+                    <img src="img/wit8.jpeg" alt="landschap">
+                </a>
+            </li>
+            <li data-filter="blauw">
+                <a href="#" data-title="vogel">
+                    <img src="img/blauw9.jpeg" alt="vogel">
+                </a>
+            </li>
+            <li data-filter="roze">
+                <a href="#" data-title="muur">
+                    <img src="img/roze-9.jpeg" alt="muur">
+                </a>
+            </li>
+            <li data-filter="roze">
+                <a href="#" data-title="streep">
+                    <img src="img/roze-10.jpeg" alt="streep">
+                </a>
+            </li>
+            
+            
+        </ul>
+    </div>
 
-    <ul class="flex-container">
-
-        <img class="afbeelding flex-item" src="img/geel-1.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/grijs-1.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/roze-1.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/blauw1.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/wit1.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/geel-2.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/grijs-2.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/roze-2.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/blauw2.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/wit2.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/geel-3.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/grijs-3.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/roze-3.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/blauw3.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/wit3.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/geel-4.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/grijs-4.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/roze-4.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/blauw4.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/wit4.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/geel-5.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/grijs-5.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/roze-5.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/blauw5.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/wit5.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/geel-6.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/grijs-6.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/roze-6.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/blauw6.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/wit6.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/geel-7.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/grijs-7.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/roze-7.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/blauw7.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/wit7.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/geel-8.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/grijs-8.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/roze-8.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/wit8.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/blauw8.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/roze-9.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/blauw9.jpeg" alt="">
-        <img class="afbeelding flex-item" src="img/wit9.jpeg" alt="">
-
-    </ul>
+    <script src="main.js"></script>
 
 </body>
 
