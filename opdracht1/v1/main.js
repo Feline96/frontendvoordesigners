@@ -1,7 +1,6 @@
-var links = document.querySelectorAll(".gallerij li a");
-var gallerij = document.getElementsByClassName("gallerij")[0];
-var gallerSingleElem = document.getElementsByClassName("gallerij-single")[0];
-var btnClose = document.getElementById("btnClose");
+//jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true/
+//eslint-env browser/
+//eslint 'no-console':0/
 
 
 // Start filter
@@ -27,7 +26,7 @@ filterBtns.forEach(function (filterBtn) {
         });
         filterSelected = this.getAttribute("data-filter");
 
-        // hide rest of the items
+        // verberg de rest van de items
         if (filterSelected != "alles" && filterSelected !== "") {
             itemsHidden = document.querySelectorAll(
                 ".gallerij li:not([data-filter='" + filterSelected + "'])"
