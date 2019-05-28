@@ -1,3 +1,8 @@
+//jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true/
+//eslint-env browser/
+//eslint 'no-console':0/
+
+
 (function() {
 	
 	function Slideshow( element ) {
@@ -9,8 +14,8 @@
 		init: function() {
 			this.wrapper = this.el.querySelector( ".slider-wrapper" );
 			this.slides = this.el.querySelectorAll( ".slide" );
-			this.previous = this.el.querySelector( ".slider-previous" );
-			this.next = this.el.querySelector( ".slider-next" );
+			this.vorige = this.el.querySelector( ".slider-vorige" );
+			this.volgende = this.el.querySelector( ".slider-volgende" );
 			this.nav = this.el.querySelector( ".slider-nav" );
 			this.index = 0;
 			this.total = this.slides.length;
@@ -53,26 +58,26 @@
 				
 			}, false);
 			
-			self.next.addEventListener( "click", function() {
+			self.volgende.addEventListener( "click", function() {
 				self.index++;
-				self.previous.style.display = "block";
+				self.vorige.style.display = "block";
 				
 				if( self.index == self.total - 1 ) {
 					self.index = self.total - 1;
-					self.next.style.display = "none";
+					self.volgende.style.display = "none";
 				}
 				
 				self._slideTo( self.index );
 				
 			}, false);
 			
-			self.previous.addEventListener( "click", function() {
+			self.vorige.addEventListener( "click", function() {
 				self.index--;
-				self.next.style.display = "block";
+				self.volgende.style.display = "block";
 				
 				if( self.index == 0 ) {
 					self.index = 0;
-					self.previous.style.display = "none";
+					self.vorige.style.display = "none";
 				}
 				
 				self._slideTo( self.index );
@@ -84,10 +89,10 @@
 				var evt = new Event( "click" );
 				
 				if( code == 39 ) {
-					self.next.dispatchEvent( evt );
+					self.volgende.dispatchEvent( evt );
 				}
 				if( code == 37 ) {
-					self.previous.dispatchEvent( evt );
+					self.vorige.dispatchEvent( evt );
 				}
 				
 			}, false);
@@ -104,5 +109,7 @@
 	
 	
 })();
+
+
 
 //Bron: https://codepen.io/gabrieleromanato/pen/pKrny //
