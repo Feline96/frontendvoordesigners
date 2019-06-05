@@ -7,7 +7,7 @@ var header = document.querySelector('header');
 console.log("header", header);
 
 var genre = document.querySelector(".genre");
-
+var loaderElement = document.querySelector('.loader');
 
 
 
@@ -63,6 +63,7 @@ function showMovies(jsonObj) {
 //https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
 //https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
 function loadimagesmetXHR() {
+    loaderElement.classList.remove('hide');
     var request = new XMLHttpRequest();
     request.open('get', uri);
     request.responseType = 'json';
