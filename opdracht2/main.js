@@ -42,7 +42,6 @@
 				var slide = slides[i],
 					src = slide.getAttribute( "data-image" );
 				
-				    slide.style.backgroundImage = "url(" + src + ")";
 			}	
 		},
 		actions: function() {

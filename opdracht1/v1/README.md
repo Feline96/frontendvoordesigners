@@ -1,4 +1,4 @@
-# Frontend
+# Frontend voor designers - opdracht 1
 
 De opdracht die ik heb gekozen voor de eerste opdracht is: 
 Als ik foto's zoek wil ik kunnen selecteren op kleur om verassende zoekresultaten te krijgen.
