@@ -3,45 +3,72 @@
     src: url('fonts/Aaargh.ttf') format("truetype");
 }
 
-*{
-  box-sizing: border-box;
-  }
-
-body{
-    background: #eee;
-    font-family: sans-serif;
+* {
+    box-sizing: border-box;
 }
 
-main{
-  background: white;
-  margin: 0 auto;
-  padding: 2em;
-  max-width: 34em;
-  box-shadow: 0.5em 1em 0.5em -0.5em #777;
+body {
+    margin: 1em;
+    background-color: #E1E7E1;
 }
 
-main section article:nth-of-type(odd){
-  background: lightgreen;
+main {
+    background: white;
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 34em;
+    box-shadow: 0.5em 1em 0.5em -0.5em #777;
 }
 
-main section article:nth-of-type(even){
-  background: coral;
+main section article:nth-of-type(odd) {
+    background: grey;
+    padding: 0.5em;
+    margin: 0.3em 0em 0.3em 0em;
 }
 
-h1{
-font-family: 'myFont', serif;   
+main section article:nth-of-type(even) {
+    background: lightgrey;
+    padding: 0.5em;
+    margin: 0.3em 0em 0.3em 0em;
 }
 
-.loader{
-  background: lightgreen;
+h1 {
+    font-family: 'myFont', serif;
 }
 
-.hide{
-  display: none;
+h2 {
+    font-family: 'myFont', serif;
+    margin: 0;
 }
 
-.show{
-  display: block
+span {
+    font-family: monospace;
+}
+
+p {
+    font-family: monospace;
+}
+
+button {
+    font-family: 'myFont', serif;
+    font-size: 1em;
+    width: 8em;
+    height: 1.5em;
+    border-radius: 0.2em;
+    background-color: pink;
+    color: white;
+}
+
+.loader {
+    background: lightgreen;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block
 }
 
 img {
