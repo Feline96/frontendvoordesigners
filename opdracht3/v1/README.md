@@ -65,3 +65,12 @@ Ja ik moet op de button 'laad films' drukken.
 Ja prima duidelijk voor mij.
 3. Wat zou je graag anders zien?
 Meer contrast het is moeilijk te lezen.
+
+
+Aanpassingen
+
+Dit was de versie waarmee ik heb getest: 
+https://oege.ie.hva.nl/~barnevf/FVD/
+
+Dit is de versie na mijn testen:
+

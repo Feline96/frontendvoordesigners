@@ -16,7 +16,7 @@ main {
     background: white;
     margin: 0 auto;
     padding: 2em;
-    max-width: 34em;
+    max-width: 45em;
     box-shadow: 0.5em 1em 0.5em -0.5em #777;
 }
 
@@ -32,8 +32,13 @@ main section article:nth-of-type(even) {
     margin: 0.3em 0em 0.3em 0em;
 }
 
+.title {
+   margin-top: 0em;
+}
+
 h1 {
     font-family: 'myFont', serif;
+    margin-top: 2em;
 }
 
 h2 {
@@ -46,16 +51,16 @@ span {
 }
 
 p {
-    font-family: monospace;
+    font-family: inherit;
 }
 
 button {
     font-family: 'myFont', serif;
-    font-size: 1em;
-    width: 8em;
+    font-size: 1.2em;
+    width: 10em;
     height: 1.5em;
-    border-radius: 0.2em;
-    background-color: pink;
+    border-radius: 0.4em;
+    background-color: deeppink;
     color: white;
 }
 

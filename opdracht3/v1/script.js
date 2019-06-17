@@ -22,31 +22,6 @@ request.onload = function () {
 }
 
 
-
-////TEST Keydown
-
-
- document.onkeydown = function (event){
-     
-     if (event.keyCode == 70) { // letter F
-     var request = new XMLHttpRequest();
-         request.open('get', uri);
-         request.responseType = 'json';
-         request.send();
-         console.log("loadimagesmetXHR", request);
-         
-         request.addEventListener("load", function (){
-             var data = request.response;
-             console.log("request is geladen: ", request.response);
-             
-             populateHeader(data);
-         });
-     }}
-
-
-        ////TEST Keydown
-
-
         function populateHeader(jsonObj) {
             var myH1 = document.createElement('h1');
             myH1.textContent = jsonObj.title;
@@ -62,9 +37,9 @@ request.onload = function () {
         }
 
         function showMovies(jsonObj) {
-            var recenties = jsonObj['reviews'];
+            var recensies = jsonObj['reviews'];
 
-            for (var i = 0; i < recenties.length; i++) {
+            for (var i = 0; i < recensies.length; i++) {
                 var myArticle = document.createElement('article');
                 var myH2 = document.createElement('h2');
                 var myPara1 = document.createElement('p');
@@ -72,8 +47,8 @@ request.onload = function () {
                 var myPara3 = document.createElement('p');
                 var myList = document.createElement('ul');
 
-                myH2.textContent = 'Recentie ' + recenties[i].id;
-                myPara1.textContent = 'Score: ' + recenties[i].score;
+                myH2.textContent = 'Recensie ' + recensies[i].id;
+                myPara1.textContent = 'Score: ' + recensies[i].score;
 
                 myArticle.appendChild(myH2);
                 myArticle.appendChild(myPara1);
@@ -139,3 +114,28 @@ request.onload = function () {
             showMovies(movies[5]);
             console.log(movies);
         }; //end: button.onclick
+
+
+
+////TEST Keydown
+
+
+ document.onkeydown = function (event){
+     
+     if (event.keyCode == 70) { // letter F
+     var request = new XMLHttpRequest();
+         request.open('get', uri);
+         request.responseType = 'json';
+         request.send();
+         console.log("loadimagesmetXHR", request);
+         
+         request.addEventListener("load", function (){
+             var data = request.response;
+             console.log("request is geladen: ", request.response);
+             
+             populateHeader(data);
+         });
+     }}
+
+
+        ////TEST Keydown
