@@ -119,23 +119,25 @@ request.onload = function () {
 
 ////TEST Keydown
 
-
- document.onkeydown = function (event){
-     
-     if (event.keyCode == 70) { // letter F
-     var request = new XMLHttpRequest();
-         request.open('get', uri);
-         request.responseType = 'json';
-         request.send();
-         console.log("loadimagesmetXHR", request);
-         
-         request.addEventListener("load", function (){
-             var data = request.response;
-             console.log("request is geladen: ", request.response);
-             
-             populateHeader(data);
-         });
-     }}
+document.body.onkeyup = function(e){
+    if(e.keyCode == 70){
+        var movies = request.response;
+        loadimagesmetXHR();
+        populateHeader(movies[0]);
+        showMovies(movies[0]);
+        populateHeader(movies[1]);
+        showMovies(movies[1]);
+        populateHeader(movies[2]);
+        showMovies(movies[2]);
+        populateHeader(movies[3]);
+        showMovies(movies[3]);
+        populateHeader(movies[4]);
+        showMovies(movies[4]);
+        populateHeader(movies[5]);
+        showMovies(movies[5]);
+        console.log(movies);
+    }
+};
 
 
         ////TEST Keydown

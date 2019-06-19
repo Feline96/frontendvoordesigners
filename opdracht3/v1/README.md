@@ -2,19 +2,16 @@
 
 Voor opdracht 3 ga je een functionaliteit ontwerpen met externe data, en testen. De data is JSON die met een REST API van een externe bron wordt ingeladen met Javascript. Als de data geladen is moeten gebruikers je ontwerp op verschillende manieren kunnen bedienen. Verschillende states zijn vormgeven en worden op het juiste moment getoond.
 
-Dit is een voorbeeld van het laden van data en er html mee maken:
-[Code demo](https://koopreynders.github.io/frontendvoordesigners/opdracht3/XMLHttpRequest/)
 
 
-## JSON
-JSON van de movies data staat ook hier:
-deze uri kun je gebruiken voor een van de use case voor opdracht 3.
-[https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json](https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json)
+4/9/11/ principles of User Interface Design 
 
-De JSON data is ook los, per film of genre of actors te gebruiken. Check die [hier](https://github.com/KoopReynders/frontendvoordesigners/tree/master/opdracht3/json).
-
-Dit is een voorbeeld van het laden van de film data:
-[Code demo](https://koopreynders.github.io/frontendvoordesigners/opdracht3/v1/)
+4)  Keep users in control
+    De gebruikers hebben zelf in de hand of de op de knop drukken of niet.
+9)  appearance follows behavior
+    De gebruikers kunnen zelf op de button drukken en dan worden de films geladen de gebruiker weet waat er wort verwacht. Wat de button verteld gebeurd ook geen verrassende resultaten.
+11) Strong visual hierarchies work best.
+    Elke film wordt op dezelfde manier weergegeven allemaal onder elkaar met een margin boven de titel zodat duidelijk is wanneer er een nieuwe film begint.  
 
 
 Usbability testing
@@ -30,7 +27,6 @@ Tom (21)
 Melanie (23)
 Marjon (53)
 Rene (55)
-
 
 Uitkomsten
 
@@ -73,4 +69,7 @@ Dit was de versie waarmee ik heb getest:
 https://oege.ie.hva.nl/~barnevf/FVD/
 
 Dit is de versie na mijn testen:
+https://oege.ie.hva.nl/~barnevf/FVDDEF/
 
+Wat ik heb gedaan is het contast groter gemaakt, zodat de tekst in de button beter te lezen is.
+En ik heb het lettertype aangepast. 
